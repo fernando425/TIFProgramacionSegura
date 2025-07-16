@@ -1,0 +1,1400 @@
+{
+	"info": {
+		"_postman_id": "e56367e2-1997-4672-be5a-15f172650117",
+		"name": "BancoTIF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36005266"
+	},
+	"item": [
+		{
+			"name": "permisos",
+			"item": [
+				{
+					"name": "crearPermisoCreate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNzUyMjQ0MDIwLCJleHAiOjE3NTIyNDU4MjAsImp0aSI6ImM0OTMzZGQ0LThmZDUtNDYxMC05MmJlLTdmZjhkZTE1MzBkOSIsIm5iZiI6MTc1MjI0NDAyMH0.wWsLAwlhqPWApnwQ0wBS0m5kXcCRVAZMFUiUU5CPp4c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionName\": \"CREATE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/permissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearPermisoRead",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNzUxNDg3MTg2LCJleHAiOjE3NTE0ODg5ODYsImp0aSI6Ijc1ZDk3YmJlLWNhZDEtNGJjNy05MzZlLTQxNjIxNjUxZmQ4NSIsIm5iZiI6MTc1MTQ4NzE4Nn0.QwenCyh8cu0mDovNhtrEN7ztQMEJ8RdJ6jxam1yWDms",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionName\": \"READ\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/permissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearPermisoUpdate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNzUwMzgwMDIzLCJleHAiOjE3NTAzODE4MjMsImp0aSI6IjliNzlhZWQ4LTdkM2QtNDQ3Ni1hNzRiLTYxMzQ5YWQzYjQ1ZCIsIm5iZiI6MTc1MDM4MDAyM30.ZjvJIbZQWi6xu8ed0gfGuy4FixvMSgzPWLYu0tmpFVM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionName\": \"UPDATE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/permissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearPermisoDelete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNzUwMzgwMDIzLCJleHAiOjE3NTAzODE4MjMsImp0aSI6IjliNzlhZWQ4LTdkM2QtNDQ3Ni1hNzRiLTYxMzQ5YWQzYjQ1ZCIsIm5iZiI6MTc1MDM4MDAyM30.ZjvJIbZQWi6xu8ed0gfGuy4FixvMSgzPWLYu0tmpFVM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissionName\": \"DELETE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/permissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerPermisos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTE0NjQ0NDgsImV4cCI6MTc1MTQ2NjI0OCwianRpIjoiYmMxM2JlZTgtZDU0Mi00ZWMyLThiYzctYTYwNjRiODk5YTA5IiwibmJmIjoxNzUxNDY0NDQ4fQ.JxD69PadJy0FuoKf8j6jbRJrO4EOZkJCFOK2s6Eddi4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/permissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerPermisoId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/permissions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"permissions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "CrearRolAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNzUyMTkwOTcyLCJleHAiOjE3NTIxOTI3NzIsImp0aSI6ImExMjEzOWU4LTBlNjQtNGFiZi05YTlhLTA1MTRhZmFjNTY0MyIsIm5iZiI6MTc1MjE5MDk3Mn0.igLkfNTyjcKaY5STI5Emi_-9vw0qFrPSdKT0378UK2U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\": \"ADMIN\",\r\n    \"permissionsList\": [\r\n        {\r\n            \"id\": 1 // ID del permiso CREATE\r\n        },\r\n        {\r\n            \"id\": 2 // ID del permiso READ\r\n        },\r\n        {\r\n            \"id\": 3\r\n        },\r\n        {\r\n            \"id\": 4\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearRolEmpleado",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNDQyOTMsImV4cCI6MTc1MjI0NjA5MywianRpIjoiZDRlNWQzYmUtY2VjYS00MjZhLWFjYjMtMzBhYzdmMjFlNDQzIiwibmJmIjoxNzUyMjQ0MjkzfQ.yCAD-4-1CI_2N0sO7iaYr3u_Sw-vFU1W9rz_njrHcvc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\": \"EMPLEADO\",\r\n    \"permissionsList\": [\r\n        {\r\n            \"id\": 1 \r\n        },\r\n        {\r\n            \"id\": 2 \r\n        },\r\n        {\r\n            \"id\": 3 \r\n        }\r\n        \r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearRolCliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNDQyOTMsImV4cCI6MTc1MjI0NjA5MywianRpIjoiZDRlNWQzYmUtY2VjYS00MjZhLWFjYjMtMzBhYzdmMjFlNDQzIiwibmJmIjoxNzUyMjQ0MjkzfQ.yCAD-4-1CI_2N0sO7iaYr3u_Sw-vFU1W9rz_njrHcvc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\": \"CLIENTE\",\r\n    \"permissionsList\": [\r\n        {\r\n            \"id\": 1 \r\n        },\r\n        {\r\n            \"id\": 2 \r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n        \r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerRoles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNzUyMTkwOTcyLCJleHAiOjE3NTIxOTI3NzIsImp0aSI6ImExMjEzOWU4LTBlNjQtNGFiZi05YTlhLTA1MTRhZmFjNTY0MyIsIm5iZiI6MTc1MjE5MDk3Mn0.igLkfNTyjcKaY5STI5Emi_-9vw0qFrPSdKT0378UK2U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerRolesId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/roles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarRol",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":3,\r\n    \"role\": \"CLIENTE\",\r\n    \"permissionsList\": [\r\n        {\r\n            \"id\": 1 \r\n        },\r\n        {\r\n            \"id\": 2 \r\n        },\r\n        {\r\n            \"id\": 3\r\n        }\r\n        \r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/roles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"roles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuarios",
+			"item": [
+				{
+					"name": "crearUsuarioAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"1234\",\r\n    \"enabled\": true,\r\n    \"accountNotExpired\": true,\r\n    \"accountNotLocked\": true,\r\n    \"credentialNotExpired\": true,\r\n    \"rolesList\": [\r\n        {\r\n            \"id\": 1\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearUsuarioEmpleado",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNDQyOTMsImV4cCI6MTc1MjI0NjA5MywianRpIjoiZDRlNWQzYmUtY2VjYS00MjZhLWFjYjMtMzBhYzdmMjFlNDQzIiwibmJmIjoxNzUyMjQ0MjkzfQ.yCAD-4-1CI_2N0sO7iaYr3u_Sw-vFU1W9rz_njrHcvc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"empleado\",\r\n    \"password\": \"1234\",\r\n    \"enabled\": true,\r\n    \"accountNotExpired\": true,\r\n    \"accountNotLocked\": true,\r\n    \"credentialNotExpired\": true,\r\n    \"rolesList\": [\r\n        {\r\n            \"id\": 2\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearUsuarioCliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIzNDY2NTgsImV4cCI6MTc1MjM0ODQ1OCwianRpIjoiMjIyN2UyNDEtODVjMy00NjY5LWJhNDgtODcwN2NiMWYzMjllIiwibmJmIjoxNzUyMzQ2NjU4fQ.yydIhG2zEoRew_q5bAv38ZSSwW4bja9Syzvgz4vrLQQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"cliente1\",\r\n    \"password\": \"1234\",\r\n    \"enabled\": true,\r\n    \"accountNotExpired\": true,\r\n    \"accountNotLocked\": true,\r\n    \"credentialNotExpired\": true,\r\n    \"rolesList\": [\r\n        {\r\n            \"id\": 3\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerUsuariosId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerPerfil",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/by-username/{username}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"by-username",
+								"{username}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarPerfil",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"nuevoNombreDeUsuario\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/perfil",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"perfil"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "crearCliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIzNDY2NTgsImV4cCI6MTc1MjM0ODQ1OCwianRpIjoiMjIyN2UyNDEtODVjMy00NjY5LWJhNDgtODcwN2NiMWYzMjllIiwibmJmIjoxNzUyMzQ2NjU4fQ.yydIhG2zEoRew_q5bAv38ZSSwW4bja9Syzvgz4vrLQQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan Pérez\",\r\n  \"dni\": \"32165498\",\r\n  \"email\": \"juan.perez@gmail.com\",\r\n  \"username\": \"cliente1\" \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerCliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNzYwNTMsImV4cCI6MTc1MjI3Nzg1MywianRpIjoiYjMyYTlhNjEtM2ViZi00NzhiLWIzZDctODIyMzcyZmYyZTg3IiwibmJmIjoxNzUyMjc2MDUzfQ.mXHkl7qgGsaN5F-S1Ki3vmUDN5wJCiyKzxqTG5TD--Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerClienteID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarCliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNDQyOTMsImV4cCI6MTc1MjI0NjA5MywianRpIjoiZDRlNWQzYmUtY2VjYS00MjZhLWFjYjMtMzBhYzdmMjFlNDQzIiwibmJmIjoxNzUyMjQ0MjkzfQ.yCAD-4-1CI_2N0sO7iaYr3u_Sw-vFU1W9rz_njrHcvc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"nombre\": \"Juan Pérez\",\r\n  \"dni\": \"32165498\",\r\n  \"cuentas\": [\r\n    { \"id\": 1 },\r\n    { \"id\": 2 }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerClientePorUsername",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/by-username/{username}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"by-username",
+								"{username}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerCuentasPorCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/{id}/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"{id}",
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarDatosCliente",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImNsaWVudGUzIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsUkVBRCxST0xFX0NMSUVOVEUsVVBEQVRFIiwiaWF0IjoxNzUyNDQyOTQ1LCJleHAiOjE3NTI0NDQ3NDUsImp0aSI6IjY5NWFmODk0LWJhNmMtNGI5ZC04ZDEyLWRhMzM2YzYyNmJlYyIsIm5iZiI6MTc1MjQ0Mjk0NX0.QZekWZBa6d2f35Y3962bRII-cFeYlv8oqnc3kiFwn90",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"Juan Carlos Pérez\",\r\n  \"dni\": \"12345679\",\r\n  \"username\": \"juanperez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/clientes/actualizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"clientes",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cuentas",
+			"item": [
+				{
+					"name": "crearCuentaOrigen",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNDQyOTMsImV4cCI6MTc1MjI0NjA5MywianRpIjoiZDRlNWQzYmUtY2VjYS00MjZhLWFjYjMtMzBhYzdmMjFlNDQzIiwibmJmIjoxNzUyMjQ0MjkzfQ.yCAD-4-1CI_2N0sO7iaYr3u_Sw-vFU1W9rz_njrHcvc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"00112233\",\r\n  \"tipoCuenta\": \"CAJA_AHORRO\",\r\n  \"saldo\": 50000.00\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas?clienteId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas"
+							],
+							"query": [
+								{
+									"key": "clienteId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearCuentaDestino",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNDQyOTMsImV4cCI6MTc1MjI0NjA5MywianRpIjoiZDRlNWQzYmUtY2VjYS00MjZhLWFjYjMtMzBhYzdmMjFlNDQzIiwibmJmIjoxNzUyMjQ0MjkzfQ.yCAD-4-1CI_2N0sO7iaYr3u_Sw-vFU1W9rz_njrHcvc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"CBU002\",\r\n  \"tipoCuenta\": \"credito\",\r\n  \"saldo\": 10000\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerCuenta",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNzYwNTMsImV4cCI6MTc1MjI3Nzg1MywianRpIjoiYjMyYTlhNjEtM2ViZi00NzhiLWIzZDctODIyMzcyZmYyZTg3IiwibmJmIjoxNzUyMjc2MDUzfQ.mXHkl7qgGsaN5F-S1Ki3vmUDN5wJCiyKzxqTG5TD--Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerCuentaID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarCuenta",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"00112233\",\r\n  \"tipoCuenta\": \"CUENTA_CORRIENTE\",\r\n  \"saldo\": 62000.00\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarCuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerMisCuentas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImNsaWVudGUzIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsUkVBRCxST0xFX0NMSUVOVEUsVVBEQVRFIiwiaWF0IjoxNzUyNDYwMTUzLCJleHAiOjE3NTI0NjE5NTMsImp0aSI6IjhiNGMzNTY5LTBiMjgtNGVlMC05MTc1LTBkZjk4ZTA2NGY1MCIsIm5iZiI6MTc1MjQ2MDE1M30.Kk0K1EJJL3gh4hf9CRT5U2mYFGJbTFrO-KOYeHS0aT8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas/mis-cuentas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas",
+								"mis-cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearMicuenta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImNsaWVudGUzIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsUkVBRCxST0xFX0NMSUVOVEUsVVBEQVRFIiwiaWF0IjoxNzUyNDY0NzcwLCJleHAiOjE3NTI0NjY1NzAsImp0aSI6IjBkMTQ2Y2EzLTkwYTMtNGYxNi1hOWYwLTZhZjQ4YjQxMWMyNyIsIm5iZiI6MTc1MjQ2NDc3MH0.TaaR9CVM8RNf8XDIEJietP_tJ5yTfZbOrAPTNxlYryg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"1111\",\r\n  \"tipoCuenta\": \"CAJA\",\r\n  \"saldo\": 5000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cuentas/mi-cuenta",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cuentas",
+								"mi-cuenta"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transacciones",
+			"item": [
+				{
+					"name": "crearTransaccion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTIyNDQyOTMsImV4cCI6MTc1MjI0NjA5MywianRpIjoiZDRlNWQzYmUtY2VjYS00MjZhLWFjYjMtMzBhYzdmMjFlNDQzIiwibmJmIjoxNzUyMjQ0MjkzfQ.yCAD-4-1CI_2N0sO7iaYr3u_Sw-vFU1W9rz_njrHcvc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"origen\": \"00112233\",\r\n  \"destino\": \"CBU002\",\r\n  \"monto\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transferencias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferencias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerTransaccion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJST0xFX0FETUlOIiwiaWF0IjoxNzUwMzgwMDIzLCJleHAiOjE3NTAzODE4MjMsImp0aSI6IjliNzlhZWQ4LTdkM2QtNDQ3Ni1hNzRiLTYxMzQ5YWQzYjQ1ZCIsIm5iZiI6MTc1MDM4MDAyM30.ZjvJIbZQWi6xu8ed0gfGuy4FixvMSgzPWLYu0tmpFVM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/transferencias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferencias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerTransaccionID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImFkbWluIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsREVMRVRFLFJFQUQsUk9MRV9BRE1JTixVUERBVEUiLCJpYXQiOjE3NTAzNDg2MjYsImV4cCI6MTc1MDM1MDQyNiwianRpIjoiZTllZTc5ODYtZjk1MC00NGU3LTg5NDctYjE5Y2JlNzhiZDg3IiwibmJmIjoxNzUwMzQ4NjI2fQ.JC87r6wy2vpBvPWb_-q3atSpSjJX0PX_CgQTMvMdbfU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/transferencias/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferencias",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizarTransaccion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"monto\": 17000.00,\r\n  \"fecha\": \"2025-06-14\",\r\n  \"cuentaOrigen\": {\r\n    \"id\": 1\r\n  },\r\n  \"cuentaDestino\": {\r\n    \"id\": 2\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transferencias/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferencias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminarTransaccion",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "DELETE /api/transferencias/1",
+							"host": [
+								"DELETE "
+							],
+							"path": [
+								"api",
+								"transferencias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "traerMisTransferencias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/transferencias/mis-transferencias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferencias",
+								"mis-transferencias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crearMiTransaccion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJDRU5UUk84LVNFQyIsInN1YiI6ImNsaWVudGUzIiwiYXV0aG9yaXRpZXMiOiJDUkVBVEUsUkVBRCxST0xFX0NMSUVOVEUsVVBEQVRFIiwiaWF0IjoxNzUyMzQ2ODc3LCJleHAiOjE3NTIzNDg2NzcsImp0aSI6IjU5MGNlM2RkLWRiZWQtNDFkYi1iOWUwLWM5NTgzZmI3ZDFmYSIsIm5iZiI6MTc1MjM0Njg3N30.VNwfGyfXBPF0cQC0GnlXr1Pd__RGqI2b0XU33Kwez_M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"origen\": \"1111\",\r\n  \"destino\": \"2222\",\r\n  \"monto\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/transferencias/realizar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"transferencias",
+								"realizar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
